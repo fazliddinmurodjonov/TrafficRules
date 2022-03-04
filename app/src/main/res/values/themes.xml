@@ -1,0 +1,37 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Theme.AndroidLesson5DatabaseSecondTask" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">#005CA1</item>
+        <item name="colorPrimaryVariant">#005CA1</item>
+        <item name="colorOnPrimary">@color/white</item>
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">#005CA1</item>
+        <item name="colorSecondaryVariant">#005CA1</item>
+        <item name="colorOnSecondary">@color/black</item>
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimaryVariant</item>
+        <!-- Customize your theme here. -->
+    </style>
+
+    <style name="AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar">
+        <item name="android:elevation">0dp</item>
+
+    </style>
+
+    <style name="Theme.AndroidLesson5DatabaseSecondTask.AppBarOverlay"  parent="ThemeOverlay.AppCompat.Dark.ActionBar">
+        <item name="android:elevation">0dp</item>
+
+    </style>
+
+    <style name="Theme.AndroidLesson5DatabaseSecondTask.PopupOverlay" parent="ThemeOverlay.AppCompat.Light">
+        <item name="android:elevation">0dp</item>
+
+    </style>
+
+    <style name="NavigationTheme" parent="Widget.Design.BottomNavigationView">
+        <item name="itemIconTint">@android:color/white</item>
+        <item name="itemTextColor">@android:color/white</item>
+        <item name="android:background">#FFFFFF</item>
+    </style>
+</resources>

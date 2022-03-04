@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/traffic_navigation"
+    app:startDestination="@id/nav_home">
+
+    <fragment
+        android:id="@+id/nav_about"
+        android:name="com.example.androidlesson5databasesecondtask.fragment.AboutFragment"
+        android:label="About us"
+        tools:layout="@layout/fragment_about" />
+    <fragment
+        android:id="@+id/nav_home"
+        android:name="com.example.androidlesson5databasesecondtask.fragment.HomeFragment"
+        android:label="Traffic signs"
+        tools:layout="@layout/fragment_home">
+        <action
+            android:id="@+id/action_homeFragment_to_viewTrafficSignFragment"
+            app:destination="@id/viewTrafficSignFragment" />
+        <action
+            android:id="@+id/action_nav_home_to_viewPagerFragment"
+            app:destination="@id/viewPagerFragment" />
+        <action
+            android:id="@+id/action_nav_home_to_addTrafficSignFragment"
+            app:destination="@id/addTrafficSignFragment" />
+        <action
+            android:id="@+id/action_nav_home_to_editTrafficSignFragment"
+            app:destination="@id/editTrafficSignFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/nav_love"
+        android:name="com.example.androidlesson5databasesecondtask.fragment.LoveFragment"
+        android:label="Favourites"
+        tools:layout="@layout/fragment_love" />
+    <fragment
+        android:id="@+id/addTrafficSignFragment"
+        android:name="com.example.androidlesson5databasesecondtask.fragment.AddTrafficSignFragment"
+        android:label="Add traffic sign"
+        tools:layout="@layout/fragment_add_traffic_sign" />
+    <fragment
+        android:id="@+id/viewTrafficSignFragment"
+        android:name="com.example.androidlesson5databasesecondtask.fragment.ViewTrafficSignFragment"
+        android:label="fragment_view_traffic_sign"
+        tools:layout="@layout/fragment_view_traffic_sign" />
+    <fragment
+        android:id="@+id/viewPagerFragment"
+        android:name="com.example.androidlesson5databasesecondtask.fragment.ViewPagerFragment"
+        android:label="fragment_view_pager"
+        tools:layout="@layout/fragment_view_pager" />
+    <fragment
+        android:id="@+id/editTrafficSignFragment"
+        android:name="com.example.androidlesson5databasesecondtask.EditTrafficSignFragment"
+        android:label="Edit traffic sign"
+        tools:layout="@layout/fragment_edit_traffic_sign" />
+</navigation>
